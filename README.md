@@ -64,6 +64,14 @@ npm ci
 npm run dev
 ```
 
+## GitHub Pages deployment
+
+The workflow in `.github/workflows/deploy-pages.yml` builds and deploys the portfolio when changes are pushed to `main`. In the repository's **Settings > Pages**, select **GitHub Actions** as the build and deployment source.
+
+The Pages build enables `STATIC_EXPORT=true` and generates `out/index.html`, service-page HTML, and all required assets. Deploy the entire `out` folder together; the generated homepage depends on its CSS, JavaScript, and images. The `.nojekyll` file keeps the `_next` assets available on static hosting.
+
+The public website is hosted at https://dev-farabi.github.io/. Its metadata uses that origin, while search indexing remains disabled by default. Normal `npm run dev`, `npm run build`, and `npm start` continue to support local development and server hosting without `STATIC_EXPORT`.
+
 ## Project structure
 
 | Path | Purpose |
