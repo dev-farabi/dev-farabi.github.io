@@ -6,7 +6,6 @@ I build responsive websites, connected web applications, and digital experiences
 
 This is my personal portfolio repository, owned and maintained by **Md Moslemin Hossain (Farabi)**. It presents my skills, selected projects, professional contributions, and services for clients, collaborators, and hiring teams.
 
-[GitHub](https://github.com/dev-farabi) · [LinkedIn](https://www.linkedin.com/in/moslemin-hossain-farabi) · [Email](mailto:mosleminhossain10@gmail.com) · [WhatsApp](https://wa.me/8801760204210)
 
 ## What I bring to a project
 
@@ -64,29 +63,6 @@ cd dev-farabi.github.io
 npm ci
 npm run dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000), or the address printed in the terminal. No API keys or database setup are required to run this portfolio.
-
-To check types and run a production build:
-
-```bash
-npm run typecheck
-npm run build
-npm start
-```
-
-## Deployment configuration
-
-Copy `.env.example` to `.env.local` and set the site origin before building:
-
-```dotenv
-NEXT_PUBLIC_SITE_URL=https://your-domain.com
-NEXT_PUBLIC_ALLOW_INDEXING=true
-```
-
-Use your actual deployment domain. The default origin is `http://localhost:3000`, and search indexing is disabled by default. Enable indexing for a public production deployment; keep it disabled for previews.
-
-This repository contains a Next.js application. Uploading its source to GitHub does not automatically publish the website through GitHub Pages; a compatible deployment or a separate static-export setup is required.
 
 ## Project structure
 
